@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Airport>
+    <Passengers>
+        <Passenger id = "1">
+            <name>John</name>
+            <bookingid>1</bookingid>
+            <luggageid>1</luggageid>
+            <age>24</age>
+        </Passenger>
+        <Passenger id = "2">
+            <name>Johnny</name>
+            <bookingid>2</bookingid>
+            <luggageid>2</luggageid>
+            <age>28</age>
+        </Passenger>
+        <Passenger id = "3">
+            <name>Mark</name>
+            <bookingid>1</bookingid>
+            <luggageid>1</luggageid>
+            <age>24</age>
+        </Passenger>
+    </Passengers>
+    <Luggages>
+        <Luggage id="1">
+            <Weight>130kg</Weight>
+            <Type>Bag</Type>
+        </Luggage>
+        <Luggage id="2">
+            <Weight>130kg</Weight>
+            <Type>Clothing</Type>
+        </Luggage>
+        <Luggage id="3">
+            <Weight>10kg</Weight>
+            <Type>Hardware</Type>
+        </Luggage>
+    </Luggages>
+    <Airplanes>
+        <Airplane id = "1">
+            <Capacity>124</Capacity>
+            <Airline>USA</Airline>
+        </Airplane>
+        <Airplane id = "2">
+            <Capacity>100</Capacity>
+            <Airline>Private</Airline>
+        </Airplane>
+        <Airplane id = "3">
+            <Capacity>170</Capacity>
+            <Airline>EU</Airline>
+        </Airplane>
+    </Airplanes>
+    <Employees>
+        <Employee id = "1">
+            <Position>Pilot</Position>
+            <Name>John Wick</Name>
+            <AirplaneID>5</AirplaneID>
+        </Employee>
+        <Employee id = "2">
+            <Position>Security</Position>
+            <Name>Bruce Wayne</Name>
+            <AirplaneID>5</AirplaneID>
+        </Employee>
+        <Employee id = "3">
+            <Position>Cashier</Position>
+            <Name>Max</Name>
+            <AirplaneID>0</AirplaneID>
+        </Employee>
+    </Employees>
+    <Bookings>
+        <Booking id="1">
+            <Seat>10</Seat>
+            <Price>150$</Price>
+            <AirportID>1</AirportID>
+        </Booking>
+        <Booking id="2">
+            <Seat>24</Seat>
+            <Price>150$</Price>
+            <AirportID>1</AirportID>
+        </Booking>
+        <Booking id="3">
+            <Seat>27</Seat>
+            <Price>150$</Price>
+            <AirportID>1</AirportID>
+        </Booking>
+    </Bookings>
+</Airport>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Luggages>
+    <Luggage id="1">
+        <Weight>130kg</Weight>
+        <Type>Bag</Type>
+    </Luggage>
+    <Luggage id="2">
+        <Weight>130kg</Weight>
+        <Type>Clothing</Type>
+    </Luggage>
+    <Luggage id="3">
+        <Weight>10kg</Weight>
+        <Type>Hardware</Type>
+    </Luggage>
+</Luggages>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Bookings>
+    <Booking id="1">
+        <Seat>10</Seat>
+        <Price>150$</Price>
+        <AirportID>1</AirportID>
+    </Booking>
+    <Booking id="2">
+        <Seat>24</Seat>
+        <Price>150$</Price>
+        <AirportID>1</AirportID>
+    </Booking>
+    <Booking id="3">
+        <Seat>27</Seat>
+        <Price>150$</Price>
+        <AirportID>1</AirportID>
+    </Booking>
+</Bookings>

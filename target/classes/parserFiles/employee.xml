@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Airport>
+    <Employees>
+        <Employee id = "1">
+            <Position>Pilot</Position>
+            <Name>John Wick</Name>
+            <AirplaneID>5</AirplaneID>
+        </Employee>
+        <Employee id = "2">
+            <Position>Security</Position>
+            <Name>Bruce Wayne</Name>
+            <AirplaneID>5</AirplaneID>
+        </Employee>
+        <Employee id = "3">
+            <Position>Cashier</Position>
+            <Name>Max</Name>
+            <AirplaneID>0</AirplaneID>
+        </Employee>
+        <Employee id = "4">
+            <Position>Cashier</Position>
+            <Name>Maxim</Name>
+            <AirplaneID>10</AirplaneID>
+        </Employee>
+    </Employees>
+</Airport>

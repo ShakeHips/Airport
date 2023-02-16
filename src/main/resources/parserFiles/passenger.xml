@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Passengers>
+    <Passenger id = "1">
+        <name>John</name>
+        <bookingid>1</bookingid>
+        <luggageid>1</luggageid>
+        <age>24</age>
+    </Passenger>
+    <Passenger id = "2">
+        <name>Johnny</name>
+        <bookingid>2</bookingid>
+        <luggageid>2</luggageid>
+        <age>28</age>
+    </Passenger>
+    <Passenger id = "3">
+        <name>Mark</name>
+        <bookingid>1</bookingid>
+        <luggageid>1</luggageid>
+        <age>24</age>
+    </Passenger>
+</Passengers>

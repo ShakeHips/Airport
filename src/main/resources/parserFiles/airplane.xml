@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Airport>
+   <Airplanes>
+        <Airplane id = "1">
+            <Capacity>124</Capacity>
+            <Airline>USA</Airline>
+        </Airplane>
+        <Airplane id = "2">
+            <Capacity>100</Capacity>
+            <Airline>Private</Airline>
+        </Airplane>
+        <Airplane id = "3">
+            <Capacity>170</Capacity>
+            <Airline>EU</Airline>
+        </Airplane>
+    </Airplanes>
+</Airport>

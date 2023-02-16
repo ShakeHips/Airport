@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Airport" type="AirportType"/>
+  <xs:complexType name="PassengerType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="John"/>
+            <xs:enumeration value="Johnny"/>
+            <xs:enumeration value="Mark"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="bookingid">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="luggageid">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="age">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="24"/>
+            <xs:enumeration value="28"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="PassengersType">
+    <xs:sequence>
+      <xs:element type="PassengerType" name="Passenger" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LuggageType">
+    <xs:sequence>
+      <xs:element name="Weight">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="130kg"/>
+            <xs:enumeration value="10kg"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Bag"/>
+            <xs:enumeration value="Clothing"/>
+            <xs:enumeration value="Hardware"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="LuggagesType">
+    <xs:sequence>
+      <xs:element type="LuggageType" name="Luggage" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AirplaneType">
+    <xs:sequence>
+      <xs:element name="Capacity">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="124"/>
+            <xs:enumeration value="100"/>
+            <xs:enumeration value="170"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Airline">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="USA"/>
+            <xs:enumeration value="Private"/>
+            <xs:enumeration value="EU"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="AirplanesType">
+    <xs:sequence>
+      <xs:element type="AirplaneType" name="Airplane" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EmployeeType">
+    <xs:sequence>
+      <xs:element name="Position">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Pilot"/>
+            <xs:enumeration value="Security"/>
+            <xs:enumeration value="Cashier"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="John Wick"/>
+            <xs:enumeration value="Bruce Wayne"/>
+            <xs:enumeration value="Max"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="AirplaneID">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="0"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="EmployeesType">
+    <xs:sequence>
+      <xs:element type="EmployeeType" name="Employee" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BookingType">
+    <xs:sequence>
+      <xs:element name="Seat">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="10"/>
+            <xs:enumeration value="24"/>
+            <xs:enumeration value="27"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="Price"/>
+      <xs:element type="xs:string" name="AirportID"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="BookingsType">
+    <xs:sequence>
+      <xs:element type="BookingType" name="Booking" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AirportType">
+    <xs:sequence>
+      <xs:element type="PassengersType" name="Passengers"/>
+      <xs:element type="LuggagesType" name="Luggages"/>
+      <xs:element type="AirplanesType" name="Airplanes"/>
+      <xs:element type="EmployeesType" name="Employees"/>
+      <xs:element type="BookingsType" name="Bookings"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
